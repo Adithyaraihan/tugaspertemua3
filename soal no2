@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class phytagoras {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("panjang sisi A: ");
+        double sisiA = input.nextDouble();
+
+        System.out.print("panjang sisi B: ");
+        double sisiB = input.nextDouble();
+
+        //Rumus phytagoras  C= √a^2+b^2
+        double sisiC = Math.sqrt(sisiA * sisiA + sisiB * sisiB);
+
+        System.out.println("Panjang sisi C: " + sisiC);
+
+        input.close();
+    }
+}
